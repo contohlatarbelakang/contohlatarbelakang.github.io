@@ -1,0 +1,1377 @@
+<!DOCTYPE html>
+<html lang="id" prefix="og: https://ogp.me/ns#">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="profile" href="https://gmpg.org/xfn/11">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Contoh Makalah Instalasi Debian - BELAJAR</title>
+    <meta name="description" content="Contoh Makalah Instalasi Debian, , , , , , , 0, , , , , , 0, contoh-makalah-instalasi-debian, BELAJAR" />
+    <meta name="robots" content="index,follow" />
+    <meta property="og:locale" content="id_ID" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Contoh Makalah Instalasi Debian - BELAJAR" />
+    <meta property="og:description" content="Contoh Makalah Instalasi Debian, , , , , , , 0, , , , , , 0, contoh-makalah-instalasi-debian, BELAJAR" />
+    <meta property="og:site_name" content="BELAJAR" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Contoh Makalah Instalasi Debian - BELAJAR" />
+    <meta name="twitter:description" content="Contoh Makalah Instalasi Debian, , , , , , , 0, , , , , , 0, contoh-makalah-instalasi-debian, BELAJAR" />
+    <link rel='stylesheet' id='generate-style-css' href='https://contohlatarbelakang.github.io/css/main.min.css'?ver=3.2.4'
+        media='all' />
+    <link rel='stylesheet' id='ez-toc-css' href='https://contohlatarbelakang.github.io/css/screen.min.css'?ver=2.0.40' media='all' />
+    <style id='generate-style-inline-css'>
+        body {
+            background-color: #f7f7f7;
+            color: #222222;
+        }
+
+        a {
+            color: #1e73be;
+        }
+
+        a:hover,
+        a:focus,
+        a:active {
+            color: #000000;
+        }
+
+        .wp-block-group__inner-container {
+            max-width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .generate-back-to-top {
+            font-size: 20px;
+            border-radius: 3px;
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            line-height: 40px;
+            width: 40px;
+            text-align: center;
+            z-index: 10;
+            transition: opacity 300ms ease-in-out;
+            opacity: 0.1;
+            transform: translateY(1000px);
+        }
+
+        .generate-back-to-top__show {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .navigation-search {
+            position: absolute;
+            left: -99999px;
+            pointer-events: none;
+            visibility: hidden;
+            z-index: 20;
+            width: 100%;
+            top: 0;
+            transition: opacity 100ms ease-in-out;
+            opacity: 0;
+        }
+
+        .navigation-search.nav-search-active {
+            left: 0;
+            right: 0;
+            pointer-events: auto;
+            visibility: visible;
+            opacity: 1;
+        }
+
+        .navigation-search input[type="search"] {
+            outline: 0;
+            border: 0;
+            vertical-align: bottom;
+            line-height: 1;
+            opacity: 0.9;
+            width: 100%;
+            z-index: 20;
+            border-radius: 0;
+            -webkit-appearance: none;
+            height: 60px;
+        }
+
+        .navigation-search input::-ms-clear {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-ms-reveal {
+            display: none;
+            width: 0;
+            height: 0;
+        }
+
+        .navigation-search input::-webkit-search-decoration,
+        .navigation-search input::-webkit-search-cancel-button,
+        .navigation-search input::-webkit-search-results-button,
+        .navigation-search input::-webkit-search-results-decoration {
+            display: none;
+        }
+
+        .gen-sidebar-nav .navigation-search {
+            top: auto;
+            bottom: 0;
+        }
+
+        :root {
+            --contrast: #222222;
+            --contrast-2: #575760;
+            --contrast-3: #b2b2be;
+            --base: #f0f0f0;
+            --base-2: #f7f8f9;
+            --base-3: #ffffff;
+            --accent: #1e73be;
+        }
+
+        .has-contrast-color {
+            color: var(--contrast);
+        }
+
+        .has-contrast-background-color {
+            background-color: var(--contrast);
+        }
+
+        .has-contrast-2-color {
+            color: var(--contrast-2);
+        }
+
+        .has-contrast-2-background-color {
+            background-color: var(--contrast-2);
+        }
+
+        .has-contrast-3-color {
+            color: var(--contrast-3);
+        }
+
+        .has-contrast-3-background-color {
+            background-color: var(--contrast-3);
+        }
+
+        .has-base-color {
+            color: var(--base);
+        }
+
+        .has-base-background-color {
+            background-color: var(--base);
+        }
+
+        .has-base-2-color {
+            color: var(--base-2);
+        }
+
+        .has-base-2-background-color {
+            background-color: var(--base-2);
+        }
+
+        .has-base-3-color {
+            color: var(--base-3);
+        }
+
+        .has-base-3-background-color {
+            background-color: var(--base-3);
+        }
+
+        .has-accent-color {
+            color: var(--accent);
+        }
+
+        .has-accent-background-color {
+            background-color: var(--accent);
+        }
+
+        body,
+        button,
+        input,
+        select,
+        textarea {
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+        }
+
+        body {
+            line-height: 1.5;
+        }
+
+        .entry-content>[class*="wp-block-"]:not(:last-child) {
+            margin-bottom: 1.5em;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            font-size: 14px;
+        }
+
+        .sidebar .widget,
+        .footer-widgets .widget {
+            font-size: 17px;
+        }
+
+        @media (max-width:768px) {
+            h1 {
+                font-size: 31px;
+            }
+
+            h2 {
+                font-size: 27px;
+            }
+
+            h3 {
+                font-size: 24px;
+            }
+
+            h4 {
+                font-size: 22px;
+            }
+
+            h5 {
+                font-size: 19px;
+            }
+        }
+
+        .top-bar {
+            background-color: #636363;
+            color: #ffffff;
+        }
+
+        .top-bar a {
+            color: #ffffff;
+        }
+
+        .top-bar a:hover {
+            color: #303030;
+        }
+
+        .site-header {
+            background-color: #ffffff;
+        }
+
+        .main-title a,
+        .main-title a:hover {
+            color: #222222;
+        }
+
+        .site-description {
+            color: #757575;
+        }
+
+        .main-navigation,
+        .main-navigation ul ul {
+            background-color: #ed4250;
+        }
+
+        .main-navigation .main-nav ul li a,
+        .main-navigation .menu-toggle,
+        .main-navigation .menu-bar-items {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul li.sfHover:not([class*="current-menu-"])>a,
+        .main-navigation .menu-bar-item:hover>a,
+        .main-navigation .menu-bar-item.sfHover>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        button.menu-toggle:hover,
+        button.menu-toggle:focus {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul li[class*="current-menu-"]>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .navigation-search input[type="search"],
+        .navigation-search input[type="search"]:active,
+        .navigation-search input[type="search"]:focus,
+        .main-navigation .main-nav ul li.search-item.active>a,
+        .main-navigation .menu-bar-items .search-item.active>a {
+            color: #ffffff;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation ul ul {
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li a {
+            color: #ffffff;
+        }
+
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):hover>a,
+        .main-navigation .main-nav ul ul li:not([class*="current-menu-"]):focus>a,
+        .main-navigation .main-nav ul ul li.sfHover:not([class*="current-menu-"])>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .main-navigation .main-nav ul ul li[class*="current-menu-"]>a {
+            color: #fcd9d6;
+            background-color: #c42f2f;
+        }
+
+        .separate-containers .inside-article,
+        .separate-containers .comments-area,
+        .separate-containers .page-header,
+        .one-container .container,
+        .separate-containers .paging-navigation,
+        .inside-page-header {
+            background-color: #ffffff;
+        }
+
+        .entry-title a {
+            color: #222222;
+        }
+
+        .entry-title a:hover {
+            color: #55555e;
+        }
+
+        .entry-meta {
+            color: #595959;
+        }
+
+        .sidebar .widget {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets {
+            background-color: #ffffff;
+        }
+
+        .footer-widgets .widget-title {
+            color: #000000;
+        }
+
+        .site-info {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        .site-info a {
+            color: #ffffff;
+        }
+
+        .site-info a:hover {
+            color: #d3d3d3;
+        }
+
+        .footer-bar .widget_nav_menu .current-menu-item a {
+            color: #d3d3d3;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="url"],
+        input[type="password"],
+        input[type="search"],
+        input[type="tel"],
+        input[type="number"],
+        textarea,
+        select {
+            color: #666666;
+            background-color: #fafafa;
+            border-color: #cccccc;
+        }
+
+        input[type="text"]:focus,
+        input[type="email"]:focus,
+        input[type="url"]:focus,
+        input[type="password"]:focus,
+        input[type="search"]:focus,
+        input[type="tel"]:focus,
+        input[type="number"]:focus,
+        textarea:focus,
+        select:focus {
+            color: #666666;
+            background-color: #ffffff;
+            border-color: #bfbfbf;
+        }
+
+        button,
+        html input[type="button"],
+        input[type="reset"],
+        input[type="submit"],
+        a.button,
+        a.wp-block-button__link:not(.has-background) {
+            color: #ffffff;
+            background-color: #55555e;
+        }
+
+        button:hover,
+        html input[type="button"]:hover,
+        input[type="reset"]:hover,
+        input[type="submit"]:hover,
+        a.button:hover,
+        button:focus,
+        html input[type="button"]:focus,
+        input[type="reset"]:focus,
+        input[type="submit"]:focus,
+        a.button:focus,
+        a.wp-block-button__link:not(.has-background):active,
+        a.wp-block-button__link:not(.has-background):focus,
+        a.wp-block-button__link:not(.has-background):hover {
+            color: #ffffff;
+            background-color: #3f4047;
+        }
+
+        a.generate-back-to-top {
+            background-color: rgba(0, 0, 0, 0.4);
+            color: #ffffff;
+        }
+
+        a.generate-back-to-top:hover,
+        a.generate-back-to-top:focus {
+            background-color: rgba(0, 0, 0, 0.6);
+            color: #ffffff;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-bar-item:hover>a,
+            .main-navigation .menu-bar-item.sfHover>a {
+                background: none;
+                color: #ffffff;
+            }
+        }
+
+        .nav-below-header .main-navigation .inside-navigation.grid-container,
+        .nav-above-header .main-navigation .inside-navigation.grid-container {
+            padding: 0px 20px 0px 20px;
+        }
+
+        .site-main .wp-block-group__inner-container {
+            padding: 40px;
+        }
+
+        .separate-containers .paging-navigation {
+            padding-top: 20px;
+            padding-bottom: 20px;
+        }
+
+        .entry-content .alignwide,
+        body:not(.no-sidebar) .entry-content .alignfull {
+            margin-left: -40px;
+            width: calc(100% + 80px);
+            max-width: calc(100% + 80px);
+        }
+
+        .rtl .menu-item-has-children .dropdown-menu-toggle {
+            padding-left: 20px;
+        }
+
+        .rtl .main-navigation .main-nav ul li.menu-item-has-children>a {
+            padding-right: 20px;
+        }
+
+        @media (max-width:768px) {
+
+            .separate-containers .inside-article,
+            .separate-containers .comments-area,
+            .separate-containers .page-header,
+            .separate-containers .paging-navigation,
+            .one-container .site-content,
+            .inside-page-header {
+                padding: 30px;
+            }
+
+            .site-main .wp-block-group__inner-container {
+                padding: 30px;
+            }
+
+            .inside-top-bar {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-header {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .widget-area .widget {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .footer-widgets-container {
+                padding-top: 30px;
+                padding-right: 30px;
+                padding-bottom: 30px;
+                padding-left: 30px;
+            }
+
+            .inside-site-info {
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            .entry-content .alignwide,
+            body:not(.no-sidebar) .entry-content .alignfull {
+                margin-left: -30px;
+                width: calc(100% + 60px);
+                max-width: calc(100% + 60px);
+            }
+
+            .one-container .site-main .paging-navigation {
+                margin-bottom: 20px;
+            }
+        }
+
+        /* End cached CSS */
+        .is-right-sidebar {
+            width: 30%;
+        }
+
+        .is-left-sidebar {
+            width: 30%;
+        }
+
+        .site-content .content-area {
+            width: 70%;
+        }
+
+        @media (max-width:768px) {
+
+            .main-navigation .menu-toggle,
+            .sidebar-nav-mobile:not(#sticky-placeholder) {
+                display: block;
+            }
+
+            .main-navigation ul,
+            .gen-sidebar-nav,
+            .main-navigation:not(.slideout-navigation):not(.toggled) .main-nav>ul,
+            .has-inline-mobile-toggle #site-navigation .inside-navigation>*:not(.navigation-search):not(.main-nav) {
+                display: none;
+            }
+
+            .nav-align-right .inside-navigation,
+            .nav-align-center .inside-navigation {
+                justify-content: space-between;
+            }
+        }
+    </style>
+    <link rel="icon" href="https://contohlatarbelakang.github.io/img/cropped-soalbelajar-32x32.png" sizes="32x32" />
+    <link rel="icon" href="https://contohlatarbelakang.github.io/img/cropped-soalbelajar-192x192.png" sizes="192x192" />
+    <link rel="apple-touch-icon" href="https://contohlatarbelakang.github.io/img/cropped-soalbelajar-180x180.png" />
+    <meta name="msapplication-TileImage" content="https://contohlatarbelakang.github.io/img/cropped-soalbelajar-270x270.png" />
+</head>
+
+<body
+    class="home blog wp-custom-logo wp-embed-responsive right-sidebar nav-above-header separate-containers nav-search-enabled nav-aligned-center header-aligned-center dropdown-hover"
+    itemtype="https://schema.org/Blog" itemscope>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-dark-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0.49803921568627" />
+                    <feFuncG type="table" tableValues="0 0.49803921568627" />
+                    <feFuncB type="table" tableValues="0 0.49803921568627" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-grayscale">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-red">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 1" />
+                    <feFuncG type="table" tableValues="0 0.27843137254902" />
+                    <feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-midnight">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0 0" />
+                    <feFuncG type="table" tableValues="0 0.64705882352941" />
+                    <feFuncB type="table" tableValues="0 1" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-magenta-yellow">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.78039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.94901960784314" />
+                    <feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-purple-green">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+                    <feFuncG type="table" tableValues="0 1" />
+                    <feFuncB type="table" tableValues="0.44705882352941 0.4" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"
+        role="none" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+        <defs>
+            <filter id="wp-duotone-blue-orange">
+                <feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+                    values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+                <feComponentTransfer color-interpolation-filters="sRGB">
+                    <feFuncR type="table" tableValues="0.098039215686275 1" />
+                    <feFuncG type="table" tableValues="0 0.66274509803922" />
+                    <feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+                    <feFuncA type="table" tableValues="1 1" />
+                </feComponentTransfer>
+                <feComposite in2="SourceGraphic" operator="in" />
+            </filter>
+        </defs>
+    </svg><a class="screen-reader-text skip-link" href="#content" title="Langsung ke isi">Langsung ke isi</a>
+    <nav class="main-navigation nav-align-center has-menu-bar-items sub-menu-right" id="site-navigation"
+        aria-label="Utama" itemtype="https://schema.org/SiteNavigationElement" itemscope>
+        <div class="inside-navigation grid-container">
+            <form method="get" class="search-form navigation-search" action="/">
+                <input type="search" class="search-field" value="" name="q" title="Cari" />
+            </form> <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+                <span class="gp-icon icon-menu-bars"><svg viewBox="0 0 512 512" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                        <path
+                            d="M0 96c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24zm0 160c0-13.255 10.745-24 24-24h464c13.255 0 24 10.745 24 24s-10.745 24-24 24H24c-13.255 0-24-10.745-24-24z" />
+                    </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                        width="1em" height="1em">
+                        <path
+                            d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                    </svg></span><span class="mobile-menu">Menu</span> </button>
+            <div id="primary-menu" class="main-nav">
+                <ul id="menu-soal-belajar" class=" menu sf-menu">
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-1"><a
+                            href="https://contohlatarbelakang.github.io">Home</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-2"><a
+                            href="https://contohlatarbelakang.github.io/page/dmca.html">DMCA</a></li>
+                    <li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-3"><a
+                            href="https://contohlatarbelakang.github.io/page/privacy-policy.html">Privacy Policy</a></li>
+                </ul>
+                </ul>
+            </div>
+            <div class="menu-bar-items"><span class="menu-bar-item search-item"><a aria-label="Buka Kolom Pencarian"
+                        href="#"><span class="gp-icon icon-search"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M208 48c-88.366 0-160 71.634-160 160s71.634 160 160 160 160-71.634 160-160S296.366 48 208 48zM0 208C0 93.125 93.125 0 208 0s208 93.125 208 208c0 48.741-16.765 93.566-44.843 129.024l133.826 134.018c9.366 9.379 9.355 24.575-.025 33.941-9.379 9.366-24.575 9.355-33.941-.025L337.238 370.987C301.747 399.167 256.839 416 208 416 93.125 416 0 322.875 0 208z" />
+                            </svg><svg viewBox="0 0 512 512" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
+                                width="1em" height="1em">
+                                <path
+                                    d="M71.029 71.029c9.373-9.372 24.569-9.372 33.942 0L256 222.059l151.029-151.03c9.373-9.372 24.569-9.372 33.942 0 9.372 9.373 9.372 24.569 0 33.942L289.941 256l151.03 151.029c9.372 9.373 9.372 24.569 0 33.942-9.373 9.372-24.569 9.372-33.942 0L256 289.941l-151.029 151.03c-9.373 9.372-24.569 9.372-33.942 0-9.372-9.373-9.372-24.569 0-33.942L222.059 256 71.029 104.971c-9.372-9.373-9.372-24.569 0-33.942z" />
+                            </svg></span></a></span></div>
+        </div>
+    </nav>
+    <header class="site-header grid-container" id="masthead" aria-label="Situs"
+        itemtype="https://schema.org/WPHeader" itemscope>
+        <div class="inside-header grid-container">
+            <h1 class="site-logo">
+                <a href="https://contohlatarbelakang.github.io" rel="home"> BELAJAR</a>
+            </h1>
+        </div>
+    </header>
+
+    <div class="site grid-container container hfeed" id="page">
+        <div class="site-content" id="content">
+            <div class="content-area" id="primary">
+                    <main class="site-main" id="main">
+        <article id="post-1327" class="post-1327 post type-post status-publish format-standard hentry category-info"
+            itemtype="https://schema.org/CreativeWork" itemscope="">
+            <div class="inside-article">
+                <header class="entry-header" aria-label="Konten">
+                    <h1 class="entry-title" itemprop="headline">Contoh Makalah Instalasi Debian</h1>
+                    <div class="entry-meta">
+                       <span
+                            class="byline">oleh <span class="author vcard" itemprop="author"
+                                itemtype="https://schema.org/Person" itemscope=""><span class="author-name"
+                                    itemprop="name">Igasurya</span></span></span>
+                    </div>
+                </header>
+                <div class="entry-content" itemprop="text">
+                    <div style="text-align: center">
+                        <img src="https://tse1.mm.bing.net/th?q=Contoh+Makalah+Instalasi+Debian" alt="Contoh Makalah Instalasi Debian">
+                    </div>
+                    <p></p>
+                    <p>apa saja yang harus dipersiapkan untuk proses instalasi debian, dan langkah langkah instalasi debian</p>
+                    <div id="ez-toc-container"
+                        class="ez-toc-v2_0_40 counter-hierarchy ez-toc-counter ez-toc-light-blue ez-toc-container-direction">
+                        <div class="ez-toc-title-container">
+                            <p class="ez-toc-title">Daftar Isi</p>
+                            <span class="ez-toc-title-toggle"><a href="#"
+                                    class="ez-toc-pull-right ez-toc-btn ez-toc-btn-xs ez-toc-btn-default ez-toc-toggle"
+                                    area-label="ez-toc-toggle-icon-1"><label for="item-63b392361c4a0"
+                                        aria-label="Table of Content"><span
+                                            style="display: flex;align-items: center;width: 35px;height: 30px;justify-content: center;direction:ltr;"><svg
+                                                style="fill: #999;color:#999" xmlns="http://www.w3.org/2000/svg"
+                                                class="list-377408" width="20px" height="20px" viewBox="0 0 24 24"
+                                                fill="none">
+                                                <path
+                                                    d="M6 6H4v2h2V6zm14 0H8v2h12V6zM4 11h2v2H4v-2zm16 0H8v2h12v-2zM4 16h2v2H4v-2zm16 0H8v2h12v-2z"
+                                                    fill="currentColor"></path>
+                                            </svg><svg style="fill: #999;color:#999" class="arrow-unsorted-368013"
+                                                xmlns="http://www.w3.org/2000/svg" width="10px" height="10px"
+                                                viewBox="0 0 24 24" version="1.2" baseProfile="tiny">
+                                                <path
+                                                    d="M18.2 9.3l-6.2-6.3-6.2 6.3c-.2.2-.3.4-.3.7s.1.5.3.7c.2.2.4.3.7.3h11c.3 0 .5-.1.7-.3.2-.2.3-.5.3-.7s-.1-.5-.3-.7zM5.8 14.7l6.2 6.3 6.2-6.3c.2-.2.3-.5.3-.7s-.1-.5-.3-.7c-.2-.2-.4-.3-.7-.3h-11c-.3 0-.5.1-.7.3-.2.2-.3.5-.3.7s.1.5.3.7z">
+                                                </path>
+                                            </svg></span></label><input type="checkbox" id="item-63b392361c4a0"></a></span>
+                        </div>
+                        <nav>
+                            <ul class="ez-toc-list ez-toc-list-level-1 ">
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-saja-yang-harus-dipersiapkan-untuk-proses-instalasi-debian-dan-langkah-langkah-instalasi-debian">1.
+                                            apa saja yang harus dipersiapkan untuk proses instalasi debian, dan langkah langkah instalasi debian</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tujuan-instalasi-debian">2.
+                                            tujuan instalasi debian</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hal-hal-yang-perlu-diperhatikan-dalam-instalasi-debian">3.
+                                            Hal hal yang perlu diperhatikan dalam instalasi debian.</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-konfigurasi-dan-instalasi-samba-server-di-debian-5">4.
+                                            cara konfigurasi dan instalasi samba server di debian 5</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-perbedaan-instalasi-linux-debian-6-0-berbasis-teks-dengan-berbasis-dos%e2%80%8b">5.
+                                            tuliskan perbedaan instalasi linux debian 6.0 berbasis teks dengan berbasis DOS​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-instalasi-dan-konfigurasi-remote-server-pada-so-jaringan-debian-8-dan-debian-10%e2%80%8b">6.
+                                            Jelaskan perbedaan instalasi dan konfigurasi remote server pada SO jaringan Debian 8 dan Debian 10​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dua-macam-mode-dalam-instalasi-os-linux-debian-adalah">7.
+                                            Dua macam mode dalam instalasi OS Linux Debian adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#berikan-pendapat-kalian-dari-hasil-proses-instalasi-debian-gui-dan-cli-manakah-yang-lebih-baik">8.
+                                            berikan pendapat kalian dari hasil proses instalasi debian gui dan cli manakah yang lebih baik</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#terangkan-yang-anda-kebahui-tentang-proses-instalasi-i-mscp-padadebian-8%e2%80%8b">9.
+                                            Terangkan yang anda kebahui tentang proses instalasi i-mscp padaDebian 8!​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-saja-options-yang-diberikan-debian-weezy-saat-halaman-pertama-proses-instalasi">10.
+                                            Apa saja options yang diberikan Debian Weezy saat halaman pertama proses instalasi ?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#menu-yang-digunakan-untuk-penentukan-partisi-pada-instalasi-debian-adalah%e2%80%8b">11.
+                                            Menu yang digunakan untuk penentukan partisi pada instalasi debian adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#cara-instalasi-dhcp-server-pada-sistem-operasi-debian-7%e2%80%8b">12.
+                                            cara instalasi dhcp server pada sistem operasi debian 7​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#laporan-instalasi-debian-9-dan-pembagian-partisi-manual-beserta-gambar">13.
+                                            laporan instalasi debian 9 (dan pembagian partisi manual) beserta gambaR?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#uraikanlah-langkah-langkah-instalasi-linux-debian-sampai-tahap-akhir%e2%80%8b">14.
+                                            uraikanlah langkah langkah instalasi linux debian sampai tahap akhir​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#instalasi-dan-konfigurasi-web-server-apache-menggunakan-debian-ios">15.
+                                            Instalasi dan konfigurasi web server Apache menggunakan Debian IOS</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-yang-anda-ketahui-tentang-instalasi-package-proftpd-di-debian">16.
+                                            Jelaskan yang anda ketahui tentang instalasi package proftpd di debian</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-cara-untuk-kembali-ke-langkah-sebelumnya-pada-instalasi-debian">17.
+                                            Bagaimana cara untuk kembali ke langkah sebelumnya pada instalasi debian</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#perbedaan-instalasi-pada-sistem-operasi-debian-berbasis-gui-dengan-cli">18.
+                                            perbedaan instalasi pada sistem operasi debian berbasis GUI dengan CLI</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#langkah-instalasi-debian-7-8">19.
+                                            langkah instalasi Debian 7.8</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ketika-kita-akan-melakukan-konfigurasi-maupun-instalasi-aplikasi-pada-debian-maka-kita-harus-masuk-sebagai-super-user-perintah-yang-digunakan-untuk-masuk-sebagai-super-user-root-pada-debian-adalah">20.
+                                            Ketika kita akan melakukan konfigurasi maupun instalasi aplikasi pada debian maka kita harus masuk sebagai super user. Perintah yang digunakan untuk masuk sebagai super user / root pada debian adalah …​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#apa-saja-poin-poin-utama-dari-proses-instalasi-debian">21.
+                                            apa saja poin poin utama dari proses instalasi debian</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#bagaimana-langkah-instalasi-debian-secara-cli">22.
+                                            bagaimana langkah instalasi debian secara CLI</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#gambar-proses-loading-instalasi-debian%e2%80%8b">23.
+                                            gambar proses loading instalasi debian​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#1-tuliskan-langkah-langkah-setting-virtual-box-untuk-instalasi-sistem-operasi-debian-11-2-tuliskan-langkah-langkah-instalasi-sistem-operasi-debian-11-cli-3-tuliskan-langkah-langkah-setting-ip-pada">24.
+                                            1. Tuliskan langkah-langkah setting virtual box untuk instalasi sistem operasi debian 11 2. Tuliskan langkah-langkah instalasi sistem operasi debian 11 CLI 3. tuliskan langkah-langkah setting ip pada linux debian 11 CLI 4. tuliskan langkah mendownload EHCP pada linux debian 11 CLI 5. tuliskan langkah-langkah instalasi EHCP pada linux debian 11 CLI​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-perbedaan-instalasi-dan-konfigurasi-remote-server-pada-so-jaringan-debian-8-dan-debian-10%e2%80%8b">25.
+                                            Jelaskan perbedaan instalasi dan konfigurasi remote server pada SO jaringan debian 8 dan debian 10​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelas-kan-yang-anda-ketahui-tentang-instalasi-package-proftpd-di-debian%e2%80%8b">26.
+                                            jelas kan yang anda ketahui tentang instalasi package proftpd di debian​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#7-apakah-yang-pertama-kali-kita-setting-saat-instalasi-debian">27.
+                                            7. Apakah yang pertama kali kita setting saat instalasi debian?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-dan-jelaskan-langkah-langkah-instalasi-sistem-operasi-debian">28.
+                                            Sebutkan dan jelaskan langkah langkah instalasi sistem operasi debian</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#dua-macam-mode-dalam-instalasi-os-linux-debian-adalah">29.
+                                            Dua macam mode dalam instalasi OS Linux Debian adalah</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskanlah-perintah-untuk-instalasi-dns-pada-debian">30.
+                                            Tuliskanlah perintah untuk instalasi DNS pada debian?</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#buatlah-soal-tentang-instalasi-debian%e2%80%8b">31.
+                                            buatlah soal tentang instalasi debian​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#hasil-proses-instalasi-debian-berbasis-gui-dan-cli">32.
+                                            hasil proses instalasi debian berbasis GUI dan CLI</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#jelaskan-alasan-dan-cara-mengatasi-bila-proses-instalasi-debian-berjalan-lambat">33.
+                                            Jelaskan alasan dan cara mengatasi bila proses instalasi Debian berjalan lambat</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#kode-posisi-time-zone-indonesia-pada-saat-instalasi-debian-9-2-1-adalah%e2%80%8b">34.
+                                            Kode posisi time zone indonesia pada saat instalasi Debian 9.2.1 adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#spesifikasi-minimal-sistem-komputer-yang-digunakan-untuk-instalasi-i-mscp-pada-debian">35.
+                                            spesifikasi minimal sistem komputer yang digunakan untuk instalasi i-mscp pada debian? </a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#tuliskan-perintah-script-instalasi-webserver-dan-database-server-di-linux-debian-9-0">36.
+                                            tuliskan perintah / script instalasi Webserver dan database server di Linux debian 9.0!</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#ada-yg-tau-instalasi-debian-tpi-tanpa-mengapus-os-windows-gitu">37.
+                                            ada yg tau instalasi debian tpi tanpa mengapus os windows gitu</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#software-yang-harus-di-pilih-jika-ingin-mendapatkan-hasil-instalasi-debian-dengan-tampilan-gui-adalah%e2%80%8b">38.
+                                            software yang harus di pilih jika ingin mendapatkan hasil instalasi Debian dengan tampilan GUI adalah​</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-hal-hal-yang-perlu-diperhatikan-dalam-instalasi-debian">39.
+                                            Sebutkan hal-hal yang perlu diperhatikan dalam instalasi debian !</a>
+                                    </li>
+                                                                    <li class="ez-toc-page-1 ez-toc-heading-level-2">
+                                        <a class="ez-toc-link ez-toc-heading-1"
+                                            href="#sebutkan-point-point-utama-dari-proses-instalasi-debian">40.
+                                            Sebutkan point-point utama dari proses instalasi debian</a>
+                                    </li>
+                                                            </ul>
+                        </nav>
+                    </div>
+                                            <h2 class="ez-toc-section" id="apa-saja-yang-harus-dipersiapkan-untuk-proses-instalasi-debian-dan-langkah-langkah-instalasi-debian">
+                            1. apa saja yang harus dipersiapkan untuk proses instalasi debian, dan langkah langkah instalasi debian</h2><br />
+                        Adanya  1 unit komputer/laptop dengan komponen lengkap, CD instalasi debian<br /><br />#semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="tujuan-instalasi-debian">
+                            2. tujuan instalasi debian</h2><br />
+                        biasanya digunakan di vps sebagai development atau web server<br />
+                                            <h2 class="ez-toc-section" id="hal-hal-yang-perlu-diperhatikan-dalam-instalasi-debian">
+                            3. Hal hal yang perlu diperhatikan dalam instalasi debian.</h2><br />
+                        - Teliti.<br />- Mengikuti tata cara install yang benar<br />- Jangan sampai ada kesalahan,karena sangat berpengaruh untuk kedepannya<br />
+                                            <h2 class="ez-toc-section" id="cara-konfigurasi-dan-instalasi-samba-server-di-debian-5">
+                            4. cara konfigurasi dan instalasi samba server di debian 5</h2><br />
+                        apt-get install samba
+nano /etc/samba/smb.conf
+service samba restart
+mkdir /home/share
+chmod 777 /home/share<br />
+                                            <h2 class="ez-toc-section" id="tuliskan-perbedaan-instalasi-linux-debian-6-0-berbasis-teks-dengan-berbasis-dos%e2%80%8b">
+                            5. tuliskan perbedaan instalasi linux debian 6.0 berbasis teks dengan berbasis DOS​</h2><br />
+                        <p><strong>Instalasi Berbasis Teks</strong></p><p>Sistem operasi berbasis teks merupakan sistem operasi dalam modus teks berlatar hitam dan tulisan putih. sistem operasi ini tidak menggunakan gambar dan grafik. Input yang paling sering digunakan untuk interaksi antara pengguna dan sistem komputer adalah menggunakan keyboard.</p><p><strong>Kelebihan:</strong></p>Pengoprasianya mudahSpace yang dibutuhkan tidak terlalu besarTidak memerlukan memori besarKompatibel pada hampir semua jenis software dan hardware<p><strong>Kelemahan:</strong></p>Mode operasinya dalam teksTidak kompatibel pada beberapa program yang beroprasi dalam mode grafis<p><strong>Instalasi Berbasis DOS</strong> itu <strong>berbasis teks</strong>. Jadi tidak ada perbedaannya</p><p>Contoh sistem operasi berbasis teks: PC-DOS, MS-DOS, Freesco, Mikrotik, FreeBSD, RedHat, dll. PC-DOS atau MS-DOS, selanjutnya disingkat dengan DOS kepanjangan dari Disk Operating Sistem.</p><p><strong>Mungkin yang kamu maksudkan :</strong></p><p><strong>Instalasi Berbasis GUI</strong></p><p>Sistem Operasi GUI yaitu sistem operasi yang memanfaatkan gambar dan berbagai fasilitas multimedia untuk kenyamanan pengguna. Interaksi antara pengguna dan sistem komputer lebih banyak menggunakan mouse.</p><p><strong>Kelebihan:</strong></p>Desain grafis lebih menarikBerinteraksi dengan komputer secara lebih baikMudah digunakanMenarik minat penggunaResolusi gambar yang tinggi<p></p><p><strong>Kekurangan:</strong></p>Memakan banyak memoriBergantung pada hardwareMembutuhkan banyak tempat pada layar komputerTidak fleksibel<p>Contoh sistem operasi berbasis GUI: semua varian Windows; beberapa Linux varian (Debian, Mandrake, SuSe, dll), UNIX, MacOS, dll. Linux dan variannya menggunakan xWindows sebagai interface untuk sistem grafis. Windows sudah mengintegrasikan sistem grafis ke dalam sistemnya.</p><p><strong>Maaf kalo salah :)</strong></p><p>Mohon Brainliestnya atau Terimakasihnya :)</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-instalasi-dan-konfigurasi-remote-server-pada-so-jaringan-debian-8-dan-debian-10%e2%80%8b">
+                            6. Jelaskan perbedaan instalasi dan konfigurasi remote server pada SO jaringan Debian 8 dan Debian 10​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>adalah protokol atau aplikasi yang memungkinkan pertukaran data antara dua perangkat jaringan yang lebih aman dibandingkan dengan telnet, rsh dan rlogin. SSH banyak digunakan pada sistem berbasis Linux dan Unix untuk mengakses akun shell.
+</p><p>
+</p><p>Dengan ssh semua percakapan antara server dan klien di enkripsi, artinya apabila percakapan tersebut disadap, penyadap tidak akan memahami isinya.</p><p><strong>Penjelasan:ini jawaban tercerdas saya y</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="dua-macam-mode-dalam-instalasi-os-linux-debian-adalah">
+                            7. Dua macam mode dalam instalasi OS Linux Debian adalah</h2><br />
+                        1. adalah mode grafik<br />2. adalah mode cli ata degan terminal atau console<br />
+                                            <h2 class="ez-toc-section" id="berikan-pendapat-kalian-dari-hasil-proses-instalasi-debian-gui-dan-cli-manakah-yang-lebih-baik">
+                            8. berikan pendapat kalian dari hasil proses instalasi debian gui dan cli manakah yang lebih baik</h2><br />
+                        kl yg lebih menarik yang gui karena enak di pandang<br />kl yg lebih baik yang cli karena lebih jelas dan tidak terlalu memakan spesifikasi perangkat yang di gunakan tetapi rumit<br />
+                                            <h2 class="ez-toc-section" id="terangkan-yang-anda-kebahui-tentang-proses-instalasi-i-mscp-padadebian-8%e2%80%8b">
+                            9. Terangkan yang anda kebahui tentang proses instalasi i-mscp padaDebian 8!​</h2><br />
+                        <p><strong>i-MSCP</strong> atau kepanjangannya adalah Internet Multi Server Control Panel adalah proyek sumber terbuka yang bertujuan untuk membuat panel kontrol multi-server yang mengesankan dan kuat untuk penggunaan pribadi dan profesional. Berikut ini yang saya ketahui tentang proses <strong>instalasi i-mscp</strong> pada <strong>Debian 8. </strong>Konfigurasi minimum untuk instalasi i-MSCP adalah: </p>Instalasi membutuhkan  komputer 32-bit atau 64-bit dengan kecepatan minimal 1 GHz. Instalasi membutuhkan  minimal 512 MB RAM. 1 GB atau lebih memori perangkat  Akses internet  100 megabit per detik atau lebih cepat.Pembahasan<p><strong>i-MSCP</strong> atau kepanjangannya adalah Internet Multi Server Control Panel adalah proyek sumber terbuka yang bertujuan untuk membuat panel kontrol multi-server yang mengesankan dan kuat untuk penggunaan pribadi dan profesional. Tujuannya adalah untuk memfasilitasi pengelolaan lingkungan shared hosting  tanpa campur tangan manusia pada sistem file server itu sendiri.</p><p>i-MSCP (Internet Multi Server Control Panel) identik dengan proyek open source yang bertujuan untuk membuat panel kontrol multi-server yang berfokus pada penggunaan pribadi dan profesional. Aplikasi jenis ini sangat cepat dan mudah digunakan, tidak kalah dengan cPanel yang banyak digunakan. Tujuan utamanya adalah untuk mengelola shared hosting tanpa campur tangan manusia pada sistem file server. Aplikasi i-MSCP hanya tersedia di dua distribusi Linux: Debian (versi Wheezy dan yang lebih baru) dan Ubuntu LTS (versi 12.04 dan yang lebih baru). </p><p>Fungsi i-MSCP:</p>Catatan DNS khusus Manajer acara (frontend dan backend) Server surat eksternal Manajemen server email (Postfix, Courier, Dovecot, keduanya mendukung kuota) Antarmuka web untuk banyak pengguna (administrator, reseller, dan pelanggan) Dukungan MySQL MariaDB  Editor konfigurasi PHP  (per pengguna, per domain, atau per situs) API Plugin (frontend dan backend) Fungsi cetak untuk instalasi tanpa pengawasan Dukungan SQL Server Jarak Jauh Penginstal paket perangkat lunak Manajemen SQL Server (MySQL) Perlindungan folder web dengan bit FS yang tidak dapat diubah.Manajemen Server Web  (Apache2 ITK, fegid, fastCGI/PHP5-FPM) <p>Sistem minimal:</p>RAM minimal 512 MB Prosesor 2 GHz atau lebih tinggi / 32-bit (x86) atau 64-bit (x64) atau lebih tinggi direkomendasikan untuk Corei3 Hard disk 1 GB atau lebih besar Akses internet  100 Mbit/s atau lebih tinggi Aplikasi PHP harus  versi 5.3.2 atau lebih tinggi dan Perl harus  versi 5.10.1 atau lebih tinggi. Sistem operasi Linux  untuk Debian Minimal Squeeze dan Ubuntu Minimal Lucid.<p></p>Pelajari lebih lanjutMateri tentang Sebutkan perangkat minimal yang digunakan untuk instalasi i-mscp https://brainly.co.id/tugas/24244743Materi tentang shared hosting pada brainly.co.id/tugas/10784054Materi tentang Perangkat komputer yang dapat menjalankan atau mengoprasikan https://brainly.co.id/tugas/6049854<p></p>Detail Jawaban<p>Kelas: SMA</p><p>Mapel: Ujian Nasional</p><p>Bab: -</p><p>Kode: -</p><p></p><p><strong>#AyoBelajar</strong></p><p><strong>#SPJ2</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="apa-saja-options-yang-diberikan-debian-weezy-saat-halaman-pertama-proses-instalasi">
+                            10. Apa saja options yang diberikan Debian Weezy saat halaman pertama proses instalasi ?</h2><br />
+                        1) Install, merupakan option untuk melakukan instalasi Debian Squeeze  dengan Mode Text.2) Graphical Install, merupakan option untuk melakukan instalasi Debian Squeeze dengan mode GUI.3) Advanced Option, berisi beberapa option lain sepertiExpert Install, Rescue Mode, Graphical automated Install serta Alternative desktop environtments.4) Help, merupakan option untuk bantuan berkaitan dengan metode dan proses instalasi.<br />
+                                            <h2 class="ez-toc-section" id="menu-yang-digunakan-untuk-penentukan-partisi-pada-instalasi-debian-adalah%e2%80%8b">
+                            11. Menu yang digunakan untuk penentukan partisi pada instalasi debian adalah​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>gatauyyyyyyyyyyuuuuuuyyvvbbjjjhggg</p><br />
+                                            <h2 class="ez-toc-section" id="cara-instalasi-dhcp-server-pada-sistem-operasi-debian-7%e2%80%8b">
+                            12. cara instalasi dhcp server pada sistem operasi debian 7​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Apa sih DHCP? DHCP itu singkatan dari Dynamic Host Configuration Protocol , yang intinya itu adalah sebuah layanan memberi atau menerima IP secara Otomatis,Dimana layanan memberi IP Otomatis disebut juga DHCP Server, dan Menerima IP secara otomatis disebut DHCP Client.
+</p><p>
+</p><p>Sepertinya dengan pengertian tadi sudah dapat dimengerti sedikit tentang DHCP.Tapi tidak akan dijelaskan lebih rinci lagi. Mengapa? Karena kita akan membahas Konfigurasinya saat ini hehe...Yup,tanpa memperlama lagi,silahkan disimak langkah-langkah konfigurasinya dibawah ini :
+</p><p>
+</p><p>
+</p><p>Langkah - Langkah Konfigurasi DHCP Server di Debian 7 :
+</p><p>
+</p><p>1. ketikkan apt-get install dhcp3-server
+</p><p>
+</p><p>
+</p><p>
+</p><p>Berikut tampilannya
+</p><p>
+</p><p>
+</p><p>Akan Muncul tulisan failed setelah install ,tapi tidak masalah.Cukup di Abaikan / lewati saja
+</p><p>
+</p><p>2. Kemudian ketikkan nano /etc/dhcp/dhcpd.conf
+</p><p>
+</p><p>
+</p><p>Gambar Tampilan awal sebelum di ubah
+</p><p>
+</p><p>3. Kemudian,lakukan langkah ini :
+</p><p>
+</p><p>hapus tanda pagar (#) dari subnet hingga tanda tutup kurawal  
+</p><p>ubah ip subnet menjadi ip network dan netmask yang sesuai
+</p><p>isi range yang berarti rentang ip yang akan dipinjamkan ke client
+</p><p>option domain name servers di isi alamat ip pada DNS server
+</p><p>option routers di isi ip router
+</p><p>option broadcast address di isi dengan ip broadcast
+</p><p>default lease time dan max-lease-time berarti lama waktu peminjaman IP,bisa diatur sesuai keinginan
+</p><p>kemudian tekan ctrl + X , lalu tekan Y , dan Tekan Enter ( Untuk Menyimpan)
+</p><p>
+</p><p>
+</p><p>Gambar tampilan setelah diubah
+</p><p>
+</p><p>4. ketikkan perintah nano /etc/default/isc-dhcp-server , dan ubah interfaces nya menjadi ethernet yang sesuai, pada umumnya menggunakan ethernet1 (eth1)
+</p><p>
+</p><p>
+</p><p>
+</p><p>5. Setelah itu simpan dengan menekan Ctrl + X , Lalu Tekan Y , dan tekan Enter
+</p><p>
+</p><p>6. ketikkan service isc-dhcp-server restart
+</p><p>
+</p><p>
+</p><p>
+</p><p>7. Dan Konfigurasi DHCP Server telah berhasil dibuat
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p>
+</p><p></p><p><strong>Penjelasan:</strong></p><p>semoga membantu</p><br />
+                                            <h2 class="ez-toc-section" id="laporan-instalasi-debian-9-dan-pembagian-partisi-manual-beserta-gambar">
+                            13. laporan instalasi debian 9 (dan pembagian partisi manual) beserta gambaR?</h2><br />
+                        Jadikan free space dulu mas <br />....<br />
+                                            <h2 class="ez-toc-section" id="uraikanlah-langkah-langkah-instalasi-linux-debian-sampai-tahap-akhir%e2%80%8b">
+                            14. uraikanlah langkah langkah instalasi linux debian sampai tahap akhir​</h2><br />
+                        Langkah-Langkah Instalasi Linux Debian<p></p><p>1.Masukkan CD Installer ke perangkat CD / DVD-ROM dan reboot komputer untuk boot dari CD.</p><p>2.Ubah first boot device pada BIOS menjadi CD-ROM.</p><p>Tekan enter untuk masuk ke boot Debian.</p><p>3.Lalu pilih bahasa yang akan digunakan, kita pilih yang Indonesia, lalu enter.</p><p>4.Selanjutnya muncul pilih layout keyboard, kita pilih yang Inggris Amerika, lalu enter.</p><p>5.Setelah itu tunggu proses deteksi hardware untuk penggerak CD-ROM.</p><p>6.Selanjutnya muncul deteksi hardware jaringan, kita pilih yang tanpa kartu Ethernet, lalu enter.</p><p>7.Setelah itu akan muncul mengkonfigurasi jaringan, lalu pilih teruskan,kemudian pilih untuk melanjutkan proses instalasi.</p><p>8.Setelah itu isi nama host untuk sistem ini, contohnya latief, lalu pilih teruskan dan enter untuk melanjutkan.</p><p>9.Setelah itu tunggu proses untuk memulai program pemartisi harddisk.</p><p>10.Selanjutnya muncul partisi harddisk, kita pilih terpadu gunakan seluruh harddisk, lalu enter.</p><p>11.Selanjutnya muncul pilih harddisk yang akan dipartisi, lalu enter.</p><p>12.Muncul pola partisi, pilih yang pertama, lalu enter.</p><p>13.Setelah itu muncul panduan tentang proses partisi pilih yang kedua, lalu enter untuk melanjutkan.</p><p>14.Selanjutnya tuliskan perubahan yang terjadi pada harddisk, kita pilih ya, lalu enter untuk melanjutkan.</p><p>15.Setelah itu muncul mengkonfigurasi zona waktu, pilih zona waktu yang sesuai dengan zona waktu anda, lalu enter untuk melanjutkan.</p><p>16.Selanjutnya membuat password untuk root, kita tulis sesuai yang kita inginkan, lalu pilih teruskan, lalu tekan enter untuk melanjutkan.</p><p>17.Selanjutnya tulis ulang kembali password yang barusan anda buat untuk mengkonfirmasi kebenaran password tersebut, lalu pilih teruskan dan enter untuk melanjutkan.</p><p>18.Setelah itu tulis nama lengkap dari pengguna, contohnya latief lalu pilih teruskan dan enter untuk melanjutkan.</p><p>19.Selanjutnya tulis nama untuk akun anda, contohnya latief lalu pilih teruskan dan enter untuk melanjutkan.</p><p>20.Setelah itu masukan password untuk pengguna baru, lalu pilih teruskan dan enter untuk melanjutkan.</p><p>21.Lalu masukan kembali password untuk mengkonfrmasi kebenaran password, lalu pilih teruskan dan enter untuk melanjutkan.</p><p>22.Setelah itu tunggu proses memasang sistem dasar.</p><p>23.Setelah itu muncul jendela gunakan suatu jaringan cermin, kita pilih tidak, lalu enter untuk melanjutkan.</p><p>24.Setelah itu muncul jendela seperti gambar di bawah ini, kita pilih teruskan dan enter untuk melanjutkan.</p><p>25.Setelah itu tunggu proses memilih dan memasang perangkat lunak.</p><p>26.Setelah itu muncul survey penggunaan paket debian, kita pilih ya, lalu enter untuk melanjutkan.</p><p>27.Selanjutnya memilih perangkat lunak yang akan diinstall (sudah tertera), kita pilih teruskan, lalu enter untuk melanjutkan.</p><p>28.Selanjutnya memilih resolusi gambar (sudah tertera), kita pilih teruskan, lalu enter untuk melanjutkan.</p><p>29.Selanjutnya tunggu proses memasang boot loader GRUB.</p><p>30Selanjutnya memasang boot loader GRUB, kita pilih ya, lalu enter untuk melanjutkan.</p><p>31.Setelah itu instalasi selesai, kita pilih teruskan, lalu enter untuk melanjutkan.</p><p>32.Setelah proses instalasi selesai, nanti akan muncul tampilan nama pengguna, lalu kita masukan nama pengguna seperti yang kita buat pada saat proses instalasi (latief), lalu enter untuk melanjutkan.</p><p>33.Selanjutnya kita akan diminta untuk memasukan password, kita masukan password sesuai yang kita buat pada saat proses instalasi, lalu enter untuk melanjutkan.</p><p>34.Selamat ! anda sudah berhasil menginstall linux debian,lihat gambar</p><p></p><p>maaf kalau salah</p>semoga membantu<br />
+                                            <h2 class="ez-toc-section" id="instalasi-dan-konfigurasi-web-server-apache-menggunakan-debian-ios">
+                            15. Instalasi dan konfigurasi web server Apache menggunakan Debian IOS</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Cara Install dan Konfigurasi Web Server (Apache, PHP7, MariaDB) di Debian 9 “Stretch”
+</p><p>Web Server adalah aplikasi server yang sangat populer, Web Server berfungsi menyediakan layanan Web. Untuk menjalankan aplikasi berbasis Web dinamis, setidaknya membutuhkan 3 aplikasi Server, yaitu Web Server (disini menggunakan Apache), Text Processor (disini menggunakan PHP), lalu Database Server (disini menggunakan MariaDB / MySQL), opsional tambahkan Database management (disini menggunakan phpMyAdmin). Asumsinya telah tersedia Komputer Debian 9 yang telah terkonfigurasi IP Address, dan juga telah tersedia Repositori yang Siap digunakan. Berikut akan di bahas satu-persatu cara installasi dan konfigurasinya
+</p><p>
+</p><p>
+</p><p>1. Installasi Paket-paket Web Server
+</p><p>untuk menginstall paket-paket Web Server, gunakan perintah berikut
+</p><p>
+</p><p>apt install apache php7.0 mariadb-server phpmyadmin
+</p><p>
+</p><p>Sebeneranya tanpa melalukan konfigurasi apapun, Web Server sudah berjalan dan dapat digunakan / diakses, caranya buka alamat IP Server atau Alamat Domain (jika DNS sudah dikonfigurasi) dari Client.debian9_web_server_1
+</p><p>
+</p><p>2. Konfigurasi phpMyAdmin
+</p><p>phpMyAdmin bawaan Debian 9 tidak dapat langsung digunakan, oleh karena itu perlu dilakukan konfigurasi. Lalu secara default MariaDB (MySQL) di Debian 9 tidak memiliki password root (tidak seperti Debian versi sebelumnya), ini juga menjadi salah satu hal yang membuat phpMyAdmin tidak bisa diakses. Berikut adalah konfigurasinya :
+</p><p>
+</p><p>
+</p><p>mysql -u root -p mysql
+</p><p>
+</p><p>Lalu pada Konsol MariaDB, masukan perintah SQL berikut
+</p><p>
+</p><p>UPDATE user SET plugin=” WHERE user=’root’;
+</p><p>
+</p><p>flush privileges;
+</p><p>
+</p><p>exit
+</p><p>
+</p><p>debian9_web_server_2
+</p><p>
+</p><p>Agar phpMyAdmin dapat menerima akses user root tanpa password, ikuti langkah berikut :
+</p><p>
+</p><p>nano /etc/phpmyadmin/config.inc.php
+</p><p>
+</p><p>Uncomment baris ini $cfg[‘Servers’][$i][‘AllowNoPassword’] = TRUE;debian9_web_server_3
+</p><p>
+</p><p>Keluar dan Simpan, lalu coba buka phpMyAdmin dari client, caranya adalah buka http://alamat_server/phpmyadmin
+</p><p>
+</p><p>debian9_web_server_4
+</p><p>
+</p><p>Login dengan user root, password default kosongdebian9_web_server_5
+</p><p>
+</p><p>3. Mengganti Password root MariaDB (Opsional)
+</p><p>Untuk alasan keamanan, passwword root di MariaDB harus diganti karena defaultnya tidak ada passwordnya. Caranya adalah sebagai berikut :
+</p><p>
+</p><p>mysql_secure_installation
+</p><p>
+</p><p>Tekan Enter, Enter, sampai pada input New password, masukan password lalu tekan Enter, lalu konfirmasikan password, lalu tekan Enter.</p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-yang-anda-ketahui-tentang-instalasi-package-proftpd-di-debian">
+                            16. Jelaskan yang anda ketahui tentang instalasi package proftpd di debian</h2><br />
+                        <p>Insatalsi package proFTPd di debian dilakukan apabila kita ingin membangun sebuah akses FTP. Untuk langkah instalasinya dapat dilihat pada link berikut : https://servernesia.com/1289/cara-install-proftpd-debian/</p><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-cara-untuk-kembali-ke-langkah-sebelumnya-pada-instalasi-debian">
+                            17. Bagaimana cara untuk kembali ke langkah sebelumnya pada instalasi debian</h2><br />
+                        <p>Menjalankan dpkg dengan pilihan -r atau --remove, diikuti dengan nama paket, menghapus paket tersebut</p><p></p><p>Untuk menghapus apapun yang berhubungan dengan sebuah paket, gunakan pilihan -P or --purge, diikuti dengan nama paket.</p><br />
+                                            <h2 class="ez-toc-section" id="perbedaan-instalasi-pada-sistem-operasi-debian-berbasis-gui-dengan-cli">
+                            18. perbedaan instalasi pada sistem operasi debian berbasis GUI dengan CLI</h2><br />
+                        kalo gui penginstalan melalui mode grafik dari pertama pempartisian hingga instalisasi,,,<br />sedangkan Cli penginstalan melalui mode dos layar hitam hanya dengan tulisan dari awal hingga akhir<br />
+                                            <h2 class="ez-toc-section" id="langkah-instalasi-debian-7-8">
+                            19. langkah instalasi Debian 7.8</h2><br />
+                        Boot LIVE CD atau Live USB. Nanti ada pilihan di dektop Debian untuk install<br />
+                                            <h2 class="ez-toc-section" id="ketika-kita-akan-melakukan-konfigurasi-maupun-instalasi-aplikasi-pada-debian-maka-kita-harus-masuk-sebagai-super-user-perintah-yang-digunakan-untuk-masuk-sebagai-super-user-root-pada-debian-adalah">
+                            20. Ketika kita akan melakukan konfigurasi maupun instalasi aplikasi pada debian maka kita harus masuk sebagai super user. Perintah yang digunakan untuk masuk sebagai super user / root pada debian adalah …​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>perintahnya adalah "su"</p><p><strong>Penjelasan:</strong></p><p>gunakan perintah ini ketika kamu menggunakan user biasa lalu ingin masuk ke Superuser untuk mendapatkan akses root.</p><br />
+                                            <h2 class="ez-toc-section" id="apa-saja-poin-poin-utama-dari-proses-instalasi-debian">
+                            21. apa saja poin poin utama dari proses instalasi debian</h2><br />
+                        <strong>Apa saja poin-poin uatama dari proses installasi debian, </strong>debian merupakan salah satu sistem operasi linux. Cara pengintsallan linux debian tidak jauh berbeda dengan linux lainnya. Adapun langkah-langkah atau poin-poin penting dalam penginstallan linux debian adalah sebagai berikut<br /><br />1. Langkah pertama tentu mengaitkan media installasi linux debia, gunakan menu booting via bios.<br /><br />2. Setelah berhasil booting ke dalam sistem, maka langkah pertama adala memilih installasi, kemudian biasanya memilih bahasa penginstallan.<br /><br />3. Setelah proses pemilihan bahasa penginstallan langkah selanjutnya adalah pemilihan layout keyboard yang akan kita gunakan.<br /><br />4. Proses selanjutnya adalah memilih hardisk dan melakukan partisi hardisk. Seperti biasa hardisk dapat dibagi menjadi 3 buat partisi penting yaitu / sebagai root, /home sebagai partisi menyimpan data kita , kemudian terakhir adalah partisi swap sebagai cadangan ram.<br /><br />5. Langkah selanjutnya adalah proses pengintsallan, biarkan hingga selesai biasanya akan ada permintaan memberi nama user dan kata sandi yang akan digunakan dalam mengakses komputer.<br /><br />6. Selain itu biasanya juga akan muncul peringatan untuk memilih jaringan komputer yang sedang terhubung dengan perangkat yang sedang dilakukan penginstallan linux debian.<br /><br />7. Setelah selesai, reboot perangkat yang diinstall linux debian.<br /><br />Demikian pembahasan mengenai poin poin yang ada pada proses penginstallan linux debian. Beberapa point yang ada adalah mengaitkan media booting,pemilihan bahasa pengintallan, pembuatan partisi hardisk dan proses penginstallan itu sendiri.<br /><br />Untuk membaca mengenai materi penginstallan komputer dapat dibaca pada link<br /><br />Kegunaan serial number brainly.co.id/tugas/15691199<br /><br />Detil tambahan <br />Kelas : 2 SMA<br />Materi : Sistem operasi linux debian<br />Kata kunci : Sistem operasi linux debian<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="bagaimana-langkah-instalasi-debian-secara-cli">
+                            22. bagaimana langkah instalasi debian secara CLI</h2><br />
+                        Pas muncul "installer boot menu" klik "install"<br />Pilih bahasa<br />Pilih lokasi<br />Pilih wilayah<br />Pilih tampilan keyboard<br />Isi nama lengkap<br />Isi hostname<br />Isi password<br />Partisi<br />Selesaicaranya sama seperti biasanya tapi saat pemilihan perangkat lunak jangan pilih "debian dekstop evironment" <br />
+                                            <h2 class="ez-toc-section" id="gambar-proses-loading-instalasi-debian%e2%80%8b">
+                            23. gambar proses loading instalasi debian​</h2><br />
+                        <p>sebentar mikir dulu.....</p><br />
+                                            <h2 class="ez-toc-section" id="1-tuliskan-langkah-langkah-setting-virtual-box-untuk-instalasi-sistem-operasi-debian-11-2-tuliskan-langkah-langkah-instalasi-sistem-operasi-debian-11-cli-3-tuliskan-langkah-langkah-setting-ip-pada">
+                            24. 1. Tuliskan langkah-langkah setting virtual box untuk instalasi sistem operasi debian 11 2. Tuliskan langkah-langkah instalasi sistem operasi debian 11 CLI 3. tuliskan langkah-langkah setting ip pada linux debian 11 CLI 4. tuliskan langkah mendownload EHCP pada linux debian 11 CLI 5. tuliskan langkah-langkah instalasi EHCP pada linux debian 11 CLI​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>1. Cara Menginstal VirtualBox</p><p>•Download VirtualBox.</p><p>•Jalankan file VirtualBox yang telah di download.</p><p>Klik Next.</p><p>•Selanjutnya klik Next.</p><p>•Ceklis semua atau pilih sesuai keinginan, lalu klik Next.</p><p>•Pilih Yes.</p><p>•Klik Install, ketika muncul notif konfirmasi pilih Yes.</p><p>•Tunggu proses penginstalan.</p><p>•Hilangkan centang pada kotak Start Oracle VM VirtualBox after installation dan klik Finish.</p><p>•VirtualBox berhasil di instal</p><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-perbedaan-instalasi-dan-konfigurasi-remote-server-pada-so-jaringan-debian-8-dan-debian-10%e2%80%8b">
+                            25. Jelaskan perbedaan instalasi dan konfigurasi remote server pada SO jaringan debian 8 dan debian 10​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p> lihat penjelasan ya</p><p><strong>Penjelasan:</strong></p><p>adalah   protokol   atau   aplikasi   yang memungkinkan  pertukaran data  antara  dua  perangkat jaringan  yang  lebih  aman dibandingkan dengan telnet, rsh dan rlogin. SSH banyak digunakan pada sistem berbasis   Linux   dan   Unix untuk mengakses akun shell.</p><p></p><p>Dengan ssh semua percakapan  antara  server  dan  klien  di  enkripsi,  artinya  apabila  percakapan tersebut disadap, penyadap tidak akan memahami isinya.</p><br />
+                                            <h2 class="ez-toc-section" id="jelas-kan-yang-anda-ketahui-tentang-instalasi-package-proftpd-di-debian%e2%80%8b">
+                            26. jelas kan yang anda ketahui tentang instalasi package proftpd di debian​</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Insatalsi package proFTPd di debian dilakukan apabila kita ingin membangun sebuah akses FTP.</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="7-apakah-yang-pertama-kali-kita-setting-saat-instalasi-debian">
+                            27. 7. Apakah yang pertama kali kita setting saat instalasi debian?</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Apakah yang pertama kali kita setting saat instalasi debian?</p><p><strong>S</strong><strong>e</strong><strong>t</strong><strong>t</strong><strong>i</strong><strong>n</strong><strong>g</strong><strong> </strong><strong>B</strong><strong>a</strong><strong>h</strong><strong>a</strong><strong>s</strong><strong>a</strong><strong> </strong><strong>(</strong><strong>Language </strong><strong>)</strong></p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-dan-jelaskan-langkah-langkah-instalasi-sistem-operasi-debian">
+                            28. Sebutkan dan jelaskan langkah langkah instalasi sistem operasi debian</h2><br />
+                        Langkah-langkah Menginstal Linux Debian 6 Berbasis TeksPada installer Boot Menu langsung pilih saja Instal.Pilih bahasa yang sobat inginkan.Pilih lokasi tempat tinggal anda. Jika tidak ada dalam daftar, sobat bisa memilih other.Pilih benua tempat tinggal sobat.Nah barulah sobat bisa memilih negara tempat tinggal sobat.Konfigurasi basis standard lokal, pilih United States yang telah umum digunakan.Pilih keyboard layout yaitu American English yang telah umum digunakan oleh banyak orang.Jika sobat diminta untuk memilih primary network interface, silakan pilih yang eth0.Selanjutnya akan ada proses configure the network, jika terjadi kegagalan abaikan saja dan klik continue.Selanjutnya memilih metode konfigurasi jaringan. Karena SO Linux Debian ini akan kita gunakan untuk sebuah jaringan, maka kita perlu untuk konfigurasi jaringan. Maka pilih configure network manualy. Sobat harus tau aturan pemberian IP Address untuk konfigurasi ini. Jika sobat tidak membutuhkan konfigurasi ini, maka sobat bisa melewatinya dengan memilih do not configure the network at this time.Silakan masukan IP Address sesuai dengan keinginan sobat. Contohnya dengan IP Address kelas C seperti 192.168.100.23Biasanya netmask akan terisi otomastis. Jika tidak terisi otomatis, silakan isi secara manual. Contohnya netmask untuk kelas C 255.255.255.0Gateway juga biasanya terisi otomastis. Jika tidak terisi otomastis, sobat masukan Network ID seperti IP Address namun segmen terakhir atau Host ID ubah dengan angka 1. Contoh pada gateway dengan mengacu pada IP Address yang telah saya buat 192.168.100.1Begitupun Name Server Address akan terisi otomatis. Jika tidak isi saja sama dengan Gateway, atau sama dengan IP Address yang digunakan server.Isi hostname dengan nama apapun yang sobat sukai. Pada windows hostname adalah computer name. Mengerti kan? Saya akan contohkan hostname: debian.Domain bisa sobat isi dengan hostname dengan diakhiri dengan sebuah domain (.com, .net, .sch, .org dll). Contoh: debian.netIsi root password. Root password adalah password untuk super user pada SO yang saat ini sobat instalkan. Superuser itu seperti Administrator pada SO Windows.Masukan kembali root password yang telah sobat buat untuk verifikasi.Masukan nama lengkap untuk user baru.Masukan username sesuai dengan keinginan sobat. Agar lebih mudah, masukan saja nama depan sobat.Masukan password untuk user baru yang telah sobat buat.Masukan kembali password yang baru sobat buat untuk verifikasi.Konfigurasi zona waktu, pilihlah kota terdekat dengan tempat tinggal sobat. Atau pilihlah kota yang sesuai dengan zona waktu di tempat tinggal sobat.Pada metode pemartisian, pilihlah Guided-use entire disk untuk membuat seluruh hardisk menjadi partisi. Jika sobat ingin mengatur lebih lanjut atau membuat pastisi lebih dari satu buah, sobat bisa memilih manual.Jika meminta pemilihan disk, pilihlah disk yang sobat inginkan untuk diproses dalam pemartisian.Pada skema pemartisian, pilihlah all files in one partition untuk menyimpan semua file system pada satu partisi. Pilihan ini direkomendasikan untuk pengguna baru.Jika sobat telah selesai dalam mengatur pemartisian, maka pilihlah finish partitioning and write change to disk.Pada pertanyaan write the change to disk, pilihlah yes untuk menyimpan pengaturan pemartisian yang telah sobat lakukan.Pada pertanyaan scan another CD or DVD, silakan pilih yes jika sobat mempunyai paket repository lain pada Debian. Jika tidak punya, pilih saja No.Pada pertanyaan use the netwotk mirror, pilih saja No jika sobat tidak akan menggunakan jaringan lain pada SO yang sobat instal.Pada pertanyaan participate in the package survey, pilih saja No jika sobat tidak akan ikut berpartisipasi dalam survei penggunaan packet.Nah di sinilah bagian yang berbeda dengan penginstalan Debian 6 GUI. Jika pada Debian 6 GUI dalam software yang diinstalkan, memilih Grapichal Desktop Environment. Sedangan pada Debian Teks tidak.Jika sobat tidak akan membuat PC yang sedang diinstal ini sebagai server, maka sobat cukup memilih Standard System Utilities saja.<br />Pada proses selanjutnya tidak akan selama pada penginstalan Debian 6 GUI. Tunggu hingga selesai.Pada pertanyaan instal the GRUB Boot Loader to the master boot record, pilihlah yes.Nah tidak lama setelah ini proses instalasi pun selesai. Klik continue dan Debian akan merestart otomatis.Akan langsung memulai proses Booting, lalu sobat login dengan user dan user password yang telah sobat buat.<br />
+                                            <h2 class="ez-toc-section" id="dua-macam-mode-dalam-instalasi-os-linux-debian-adalah">
+                            29. Dua macam mode dalam instalasi OS Linux Debian adalah</h2><br />
+                        bios mode dan visual mode<br />
+                                            <h2 class="ez-toc-section" id="tuliskanlah-perintah-untuk-instalasi-dns-pada-debian">
+                            30. Tuliskanlah perintah untuk instalasi DNS pada debian?</h2><br />
+                        <p>apt-get install bind9 ???</p><br />
+                                            <h2 class="ez-toc-section" id="buatlah-soal-tentang-instalasi-debian%e2%80%8b">
+                            31. buatlah soal tentang instalasi debian​</h2><br />
+                        <p> </p><p>melakukan instalasi Debian dengan...</p><p></p><p>maaf kalau salah ya</p><p> </p><p></p><br />
+                                            <h2 class="ez-toc-section" id="hasil-proses-instalasi-debian-berbasis-gui-dan-cli">
+                            32. hasil proses instalasi debian berbasis GUI dan CLI</h2><br />
+                        Tergantung penggunaan Debian itu sebagai apa. kalo untuk Server jelas Instalasi Debian secara CLI  lebih baik, kalo hanya untuk PC / Client GUI lah yang lebih baik.<br />(menurut sahabat brainly ArifSetiawan)<br /><br /><br />
+                                            <h2 class="ez-toc-section" id="jelaskan-alasan-dan-cara-mengatasi-bila-proses-instalasi-debian-berjalan-lambat">
+                            33. Jelaskan alasan dan cara mengatasi bila proses instalasi Debian berjalan lambat</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>Adanya 1 unit computer/laptop dengan komponen</p><p>lengkap, CD instalasi denian</p><p></p><p>Semoga membantu </p><br />
+                                            <h2 class="ez-toc-section" id="kode-posisi-time-zone-indonesia-pada-saat-instalasi-debian-9-2-1-adalah%e2%80%8b">
+                            34. Kode posisi time zone indonesia pada saat instalasi Debian 9.2.1 adalah​</h2><br />
+                        <p>Jawaban:setau saya adalah GMT +7</p><p></p><p>Penjelasan:moga membantu</p><p></p><br />
+                                            <h2 class="ez-toc-section" id="spesifikasi-minimal-sistem-komputer-yang-digunakan-untuk-instalasi-i-mscp-pada-debian">
+                            35. spesifikasi minimal sistem komputer yang digunakan untuk instalasi i-mscp pada debian? </h2><br />
+                        <p><strong>Jawaban:</strong></p><p>engak </p><p><strong>Penjelasan:</strong></p><p></p><br />
+                                            <h2 class="ez-toc-section" id="tuliskan-perintah-script-instalasi-webserver-dan-database-server-di-linux-debian-9-0">
+                            36. tuliskan perintah / script instalasi Webserver dan database server di Linux debian 9.0!</h2><br />
+                        <p><strong>Jawaban:</strong></p><p>sudo apt-get install nginx</p><p><strong>Penjelasan:</strong></p><p>Untuk installasi Webserver Nginx di debian</p><br />
+                                            <h2 class="ez-toc-section" id="ada-yg-tau-instalasi-debian-tpi-tanpa-mengapus-os-windows-gitu">
+                            37. ada yg tau instalasi debian tpi tanpa mengapus os windows gitu</h2><br />
+                        ada pakai grub bootloader <br />
+                                            <h2 class="ez-toc-section" id="software-yang-harus-di-pilih-jika-ingin-mendapatkan-hasil-instalasi-debian-dengan-tampilan-gui-adalah%e2%80%8b">
+                            38. software yang harus di pilih jika ingin mendapatkan hasil instalasi Debian dengan tampilan GUI adalah​</h2><br />
+                        <p>Image File ISO yang dipilih mengandung kata desktop environtment atau sudah disediakan didaftarnya, seperti XFCE, Plasma, Neon, i3, GNOME, dsb</p><p></p><p>Semoga jawaban ini membantu</p><br />
+                                            <h2 class="ez-toc-section" id="sebutkan-hal-hal-yang-perlu-diperhatikan-dalam-instalasi-debian">
+                            39. Sebutkan hal-hal yang perlu diperhatikan dalam instalasi debian !</h2><br />
+                        - Spesifikasi komputer<br />- Pemilihan boot device dalam BIOS<br />- Pembuatan partisii<br />
+                                            <h2 class="ez-toc-section" id="sebutkan-point-point-utama-dari-proses-instalasi-debian">
+                            40. Sebutkan point-point utama dari proses instalasi debian</h2><br />
+                        -  Konfigurasi BIOS untuk dapat melakukan boot melalui CD/DVD.<br />-  Pemilihan mode instalasi teks atau grafis (GUI)<br />-  Pemilihan bahasa, lokasi saat ini dan jenis keyboard<br />-  Pengaturan jaringan dan nama host (komputer)<br />-  Penentuan password untuk user root<br />-  Pembuatan user baru<br />-  Penentuan pewaktuan sesuai lokasi saat ini<br />-  Penentuan skema partisi yang akan digunakan<br />-  Pengelolaan sumber paket aplikasi (CD atau mirror)<br />-  Pemilihan aplikasi yang akan diinstall-  Instalasi boot loader<br />
+                    
+                </div>
+                <div class="youtubeVideo" style="text-align: center">
+                    <h3>Video Terkait</h3>
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/HYXUpVKt8BY?controls=0" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"allowfullscreen></iframe>
+                </div>
+                <footer class="entry-meta" aria-label="Meta postingan">
+                    <span class="cat-links"><span class="gp-icon icon-categories"><svg viewBox="0 0 512 512"
+                                aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em">
+                                <path
+                                    d="M0 112c0-26.51 21.49-48 48-48h110.014a48 48 0 0143.592 27.907l12.349 26.791A16 16 0 00228.486 128H464c26.51 0 48 21.49 48 48v224c0 26.51-21.49 48-48 48H48c-26.51 0-48-21.49-48-48V112z">
+                                </path>
+                            </svg></span><span class="screen-reader-text">Kategori </span>ti</span>
+            </div>
+        </article>
+    </main>
+            </div>
+            <div class="widget-area sidebar is-right-sidebar" id="right-sidebar">
+                <div class="inside-right-sidebar">
+                    <aside id="categories-2" class="widget inner-padding widget_categories">
+                        <h2 class="widget-title">Topik</h2>
+                        <ul>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-kata-pengantar-singkat-untuk-makalah.html">Contoh Kata Pengantar Singkat Untuk Makalah</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-latar-belakang-karyawan.html">Contoh Latar Belakang Karyawan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-latar-belakang-dalam-laporan-praktikum.html">Contoh Latar Belakang Dalam Laporan Praktikum</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-kata-pengantar-tentang-kesehatan.html">Contoh Kata Pengantar Tentang Kesehatan</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-latar-belakang-tugas-akhir-sistem-informasi.html">Contoh Latar Belakang Tugas Akhir Sistem Informasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-latar-belakang-laporan-praktikum-hidrometer.html">Contoh Latar Belakang Laporan Praktikum Hidrometer</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-kalimat-pendahuluan-dalam-esai.html">Contoh Kalimat Pendahuluan Dalam Esai</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-kata-pengantar-makalah-public-relation.html">Contoh Kata Pengantar Makalah Public Relation</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/disusun-oleh-kelompok.html">Disusun Oleh Kelompok</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-makalah-iman-kepada-heri-akhir.html">Contoh Makalah Iman Kepada Heri Akhir</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-makalah-dengan-daftar-gambar.html">Contoh Makalah Dengan Daftar Gambar</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-kata-pengantar-tugas-kimia-medisinal.html">Contoh Kata Pengantar Tugas Kimia Medisinal</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-makalah-tentang-etika-bisnis.html">Contoh Makalah Tentang Etika Bisnis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-kata-pengantar-tentang-bahas-aindomesia.html">Contoh Kata Pengantar Tentang Bahas Aindomesia</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-makalah-dengandaftar-isi.html">Contoh Makalah Dengandaftar Isi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-makalah-yang-sistematis.html">Contoh Makalah Yang Sistematis</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/makalah-contoh-makna-denotasi-dan-konotasi.html">Makalah Contoh Makna Denotasi Dan Konotasi</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-latar-belakang-acara-ulang-tahun-perusahaan-makanan-dan-minuman.html">Contoh Latar Belakang Acara Ulang Tahun Perusahaan Makanan Dan Minuman</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-kesimpulan-makalah-pkn-pancasila.html">Contoh Kesimpulan Makalah Pkn Pancasila</a>
+                                </li>
+                                                            <li class="cat-item cat-item-23"><a
+                                        href="https://contohlatarbelakang.github.io/contoh-kata-pengantar-makalah-revitalisasi-budaya.html">Contoh Kata Pengantar Makalah Revitalisasi Budaya</a>
+                                </li>
+                                                    </ul>
+
+                    </aside>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="site-footer">
+        <footer class="site-info" aria-label="Situs" itemtype="https://schema.org/WPFooter" itemscope>
+            <div class="inside-site-info grid-container">
+                <div class="copyright-bar">
+                    <span class="copyright">&copy; 2023 <a href="https://contohlatarbelakang.github.io"
+                            itemprop="url">BELAJAR</a></span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <a title="Gulirkan kembali ke puncak laman" aria-label="Gulirkan kembali ke puncak laman" rel="nofollow"
+        href="#" class="generate-back-to-top" data-scroll-speed="400" data-start-scroll="300">
+        <span class="gp-icon icon-arrow-up"><svg viewBox="0 0 330 512" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill-rule="evenodd"
+                clip-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="1.414">
+                <path
+                    d="M305.863 314.916c0 2.266-1.133 4.815-2.832 6.514l-14.157 14.163c-1.699 1.7-3.964 2.832-6.513 2.832-2.265 0-4.813-1.133-6.512-2.832L164.572 224.276 53.295 335.593c-1.699 1.7-4.247 2.832-6.512 2.832-2.265 0-4.814-1.133-6.513-2.832L26.113 321.43c-1.699-1.7-2.831-4.248-2.831-6.514s1.132-4.816 2.831-6.515L158.06 176.408c1.699-1.7 4.247-2.833 6.512-2.833 2.265 0 4.814 1.133 6.513 2.833L303.03 308.4c1.7 1.7 2.832 4.249 2.832 6.515z"
+                    fill-rule="nonzero" />
+            </svg></span>
+    </a>
+    <script id="generate-a11y">
+        ! function() {
+            "use strict";
+            if ("querySelector" in document && "addEventListener" in window) {
+                var e = document.body;
+                e.addEventListener("mousedown", function() {
+                    e.classList.add("using-mouse")
+                }), e.addEventListener("keydown", function() {
+                    e.classList.remove("using-mouse")
+                })
+            }
+        }();
+    </script>
+    <!--[if lte IE 11]>
+<script src='https://contohlatarbelakang.github.io/js/classList.min.js' ?ver=3.2.4' id='generate-classlist-js'></script>
+<![endif]-->
+    <script id='generate-menu-js-extra'>
+        var generatepressMenu = {
+            "toggleOpenedSubMenus": "1",
+            "openSubMenuLabel": "Buka Submenu",
+            "closeSubMenuLabel": "Tutup submenu"
+        };
+    </script>
+    <script src='https://contohlatarbelakang.github.io/js/menu.min.js' ?ver=3.2.4' id='generate-menu-js'></script>
+    <script id='generate-navigation-search-js-extra'>
+        var generatepressNavSearch = {
+            "open": "Buka Kolom Pencarian",
+            "close": "Tutup Kolom Pencarian"
+        };
+    </script>
+    <script src='https://contohlatarbelakang.github.io/js/navigation-search.min.js' ?ver=3.2.4' id='generate-navigation-search-js'></script>
+    <script id='generate-back-to-top-js-extra'>
+        var generatepressBackToTop = {
+            "smooth": "1"
+        };
+    </script>
+    <script src='https://contohlatarbelakang.github.io/js/back-to-top.min.js' ?ver=3.2.4' id='generate-back-to-top-js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/1d/a7/d8/1da7d80839196eccc4a624ab91e5ccbf.js'></script>
+<script type='text/javascript' src='//cloudlessmajesty.com/8d/be/84/8dbe84c54b7cc5b78aa0e0a1fbdbae07.js'></script>
+<!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4777688,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4777688&101" alt="" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
